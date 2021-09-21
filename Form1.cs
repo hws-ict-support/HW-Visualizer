@@ -45,6 +45,8 @@ namespace HWS_Visualizer
                 cmbCameras.Items.Add(VideoCaptureDevice.Name);
                 if (VideoCaptureDevice.Name.Contains("AVer"))
                     cmbCameras.Text = VideoCaptureDevice.Name;
+                if (VideoCaptureDevice.Name.Contains("Aver"))
+                    cmbCameras.Text = VideoCaptureDevice.Name;   
                 btnGo.Enabled = true;
             }
             
